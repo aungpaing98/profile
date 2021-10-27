@@ -4,7 +4,9 @@
     background-color: $light;
     display:flex;
     justify-content: center;
-    position:fixed;
+    backdrop-filter: blur(10px);
+    position:sticky;
+    top:0;
 }
 
 .navtab{
@@ -27,8 +29,23 @@
 .navlink{
     text-decoration: none;
     color:$dark;
+    display:flex;
+    align-items: center;
 }
+
+.navimg{
+    height:1.2rem;
+    width:1.2rem;
+    margin-right:.6rem;
+    transform:rotate(12deg);
+}
+
 
 .home{
     font-weight: $bold;
+    &:hover{
+        > .navimg{
+            transform : rotate(-15deg);
+        }
+    }
 }

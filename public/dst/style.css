@@ -83,6 +83,7 @@ body {
   width: 1.2rem;
   margin-right: 0.6rem;
   transform: rotate(12deg);
+  transition: transform 300ms ease-in-out;
 }
 
 .home {
@@ -90,6 +91,17 @@ body {
 }
 .home:hover > .navimg {
   transform: rotate(-15deg);
+}
+
+.toggledark {
+  height: 2rem;
+  width: 2rem;
+  border: 0;
+  border-radius: 6px;
+}
+.toggledark > img {
+  height: 1rem;
+  transform: rotate(-30deg);
 }
 
 .hero {
@@ -113,7 +125,7 @@ body {
   border-radius: 50%;
   background-image: url("/images/profile.jpg");
   background-size: contain;
-  border: 3px solid #1b212c;
+  border: 3px solid #ffffff85;
 }
 
 .about > p {

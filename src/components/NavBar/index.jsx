@@ -1,8 +1,11 @@
+import {useState} from 'react'
+
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
+  const [dark, setDark] = useState(true);
   return (
-    <div className="navbar">
+    <div className="navbar"> 
       <div className="navtab">
         <ul className="navlinks">
           <li className="nav">
@@ -17,8 +20,8 @@ export default function NavBar() {
             </Link>
           </li>
         </ul>
-        <button className="darktoggle">
-            <img src="/images/moon.png" alt="Toggle Dark mode Button" />
+        <button className="toggledark" onClick={()=>{setDark(!dark)}} style={{backgroundColor:dark?"#fbd38d":"#805AD5"}}>
+          <img src={dark?"/images/sun.png" : "/images/moon.png"} alt="moon logo" />
         </button>
       </div>
     </div>

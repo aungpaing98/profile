@@ -1,0 +1,160 @@
+html, body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Roboto Slab", serif;
+  font-size: 17px;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+body {
+  background-color: #f0e7db;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  width: 600px;
+  padding: 0 1.4rem;
+  margin-top: 2rem;
+}
+
+.subtitle {
+  font-size: 1.333rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+  -webkit-text-decoration-color: #1b212c;
+          text-decoration-color: #1b212c;
+}
+
+.navbar {
+  height: 2.369rem;
+  width: 100%;
+  background-color: #FFFFFFE8;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.navtab {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+}
+
+.nav {
+  padding-right: 2rem;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home {
+  font-weight: 700;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_text > h2 {
+  font-size: 1.777rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero_text_job {
+  color: #1b212c;
+}
+
+.hero_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url("/images/profile.jpg");
+  background-size: contain;
+  border: 3px solid #2f7e73;
+}
+
+.about > p {
+  color: #1b212c;
+}
+
+.contact_item {
+  display: flex;
+  width: 12rem;
+  padding: 0.6rem 2rem 0.2rem 0.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact_item > p {
+  color: #2f7e73;
+  font-weight: 700;
+}
+.contact_item:hover {
+  background-color: #fbd38d;
+}
+.contact_way {
+  height: 30px;
+  padding-right: 1rem;
+}
+
+.works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  margin: 1.2rem 0;
+}
+.project > h3 {
+  margin: 1.1rem 0;
+  text-align: center;
+}
+.project > p {
+  text-align: center;
+  font-size: 14px;
+}
+.project_img {
+  width: 100%;
+  height: 180px;
+  border-radius: 2rem;
+}
+
+.footer {
+  margin-top: 1.2rem;
+}
+.footer > p {
+  color: gray;
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */

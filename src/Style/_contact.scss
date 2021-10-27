@@ -1,0 +1,23 @@
+.contact{
+    &_item{
+        display:flex;
+        width:12rem;
+        padding: 0.6rem 2rem 0.2rem 0.2rem;
+        border-radius: 1rem;
+        cursor:pointer;
+        text-decoration: none;
+        > p {
+            color:$neon;
+            font-weight:$bold;
+        }
+
+        &:hover{
+            background-color: $yellow;
+        }
+    }
+
+    &_way{
+        height:30px;
+        padding-right: 1rem;
+    }
+}
